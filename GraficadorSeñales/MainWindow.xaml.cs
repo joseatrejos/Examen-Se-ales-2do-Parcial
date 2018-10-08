@@ -66,13 +66,6 @@ namespace GraficadorSeñales
             
             señal.construirSeñalDigital();
 
-            // Truncar
-            if ((bool)ckb_Truncado.IsChecked)
-            {
-                double n = double.Parse(txt_Truncado.Text);
-                señal.truncar(n);
-            }
-
             // Escalar
             if ((bool)ckb_Escala.IsChecked)
             {
@@ -85,6 +78,20 @@ namespace GraficadorSeñales
             {
                 double factorDesplazamiento = double.Parse(txt_Desplazamiento.Text);
                 señal.desplazar(factorDesplazamiento);
+            }
+
+            // Truncar
+            if ((bool)ckb_Truncado.IsChecked)
+            {
+                double n = double.Parse(txt_Truncado.Text);
+                señal.truncar(n);
+            }
+
+            // Potenciar
+            if ((bool)ckb_Potencia.IsChecked)
+            {
+                double n = Math.Abs(double.Parse(txt_Potencia.Text));
+                señal.potenciar(n);
             }
 
             // Actualizar

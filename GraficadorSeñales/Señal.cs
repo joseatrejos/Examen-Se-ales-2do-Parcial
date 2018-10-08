@@ -37,21 +37,6 @@ namespace GraficadorSeñales
             }
         }
 
-        public void truncar (double n)
-        {
-            foreach (Muestra muestra in Muestras)
-            {
-                if (muestra.Y > n)
-                {
-                    muestra.Y = n;
-                }
-                else if (muestra.Y < -n)
-                {
-                    muestra.Y = -n;
-                }
-            }
-        }
-
         public void escalar (double factor)
         {
             foreach(Muestra muestra in Muestras)
@@ -77,6 +62,40 @@ namespace GraficadorSeñales
             foreach (Muestra muestra in Muestras)
             {
                 muestra.Y += factor;
+            }
+        }
+
+        public void truncar(double n)
+        {
+            foreach (Muestra muestra in Muestras)
+            {
+                if (muestra.Y > n)
+                {
+                    muestra.Y = n;
+                }
+                else if (muestra.Y < -n)
+                {
+                    muestra.Y = -n;
+                }
+            }
+        }
+
+        public void potenciar(double n)
+        {
+            foreach (Muestra muestra in Muestras)
+            {
+                if (muestra.Y > 0)
+                {
+                    muestra.Y = Math.Pow(muestra.Y, n);
+                }
+                else if (muestra.Y == 0)
+                {
+                    muestra.Y = 0;
+                }
+                else if(muestra.Y < 0)
+                {
+                    muestra.Y = -(Math.Pow(muestra.Y, n));
+                }
             }
         }
     }

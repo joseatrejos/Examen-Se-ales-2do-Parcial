@@ -12,11 +12,11 @@
             <RowDefinition Height="224"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="lbl_TiempoInicial" HorizontalAlignment="Left" Margin="434,7,0,0" TextWrapping="Wrap" Text="Tiempo Inicial" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_TiempoInicial" HorizontalAlignment="Left" Height="23" Margin="434,28,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_TiempoInicial" HorizontalAlignment="Left" Height="23" Margin="434,28,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="136"/>
         <TextBlock x:Name="lbl_TiempoFinal" HorizontalAlignment="Left" Margin="608,7,0,0" TextWrapping="Wrap" Text="Tiempo Final" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_TiempoFinal" HorizontalAlignment="Left" Height="23" Margin="608,28,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="lbl_FrecuenciaDeMuestreo" HorizontalAlignment="Left" Margin="434,72,0,0" TextWrapping="Wrap" Text="Frecuencia de Muestreo" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_FrecuenciaDeMuestreo" HorizontalAlignment="Left" Height="23" Margin="434,93,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="136"/>
+        <TextBlock x:Name="lbl_FrecuenciaDeMuestreo" HorizontalAlignment="Left" Margin="608,72,0,0" TextWrapping="Wrap" Text="Frecuencia de Muestreo" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_FrecuenciaDeMuestreo" HorizontalAlignment="Left" Height="23" Margin="608,93,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="136"/>
         <Button x:Name="BotonGraficar" Content="Graficar" HorizontalAlignment="Left" Margin="608,161,0,0" VerticalAlignment="Top" Width="158" Click="BotonGraficar_Click"/>
         <ScrollViewer x:Name="scrContenedor" HorizontalAlignment="Left" Height="224" Margin="53,0,0,0" VerticalAlignment="Top" Width="739" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Row="1">
             <Grid>
@@ -37,12 +37,15 @@
         <TextBlock x:Name="lbl_ComboBox" HorizontalAlignment="Left" Margin="434,140,0,0" TextWrapping="Wrap" Text="Tipo de Señal" VerticalAlignment="Top"/>
         <TextBlock x:Name="lbl_EscalaAmplitud" HorizontalAlignment="Left" Margin="238,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"><Run Text="Escala de amplitud"/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="txt_EscalaAmplitud" HorizontalAlignment="Left" Height="23" Margin="238,28,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
-        <CheckBox x:Name="ckb_Escala" Content="" Margin="367,32,406,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckb_Escala" Content="" Margin="367,32,399,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="lbl_Desplazamiento" HorizontalAlignment="Left" Margin="238,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21" Text="Desplazamiento en y"/>
         <TextBox x:Name="txt_Desplazamiento" HorizontalAlignment="Left" Height="23" Margin="238,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <CheckBox x:Name="ckb_Desplazamiento" Content="" HorizontalAlignment="Left" Margin="366,97,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="lbl_Truncado" HorizontalAlignment="Left" Margin="238,134,0,0" TextWrapping="Wrap" Text="Umbral" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_Truncado" HorizontalAlignment="Left" Height="23" Margin="238,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
         <CheckBox x:Name="ckb_Truncado" Content="" HorizontalAlignment="Left" Margin="367,159,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lbl_Potencia" HorizontalAlignment="Left" Margin="434,72,0,0" TextWrapping="Wrap" Text="Potencia Positiva" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Potencia" HorizontalAlignment="Left" Height="23" Margin="434,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="136"/>
+        <CheckBox x:Name="ckb_Potencia" Content="" HorizontalAlignment="Left" Margin="575,97,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
